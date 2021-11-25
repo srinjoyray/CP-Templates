@@ -1,9 +1,9 @@
 // Range sum queries
-struct SegTree {
+struct Segtree {
 	vector<ll> tree;
 	vector<ll> arr; // type may change
 	int n;
-	SegTree(int a_len, vector<ll> &a) { // change if type updated
+	Segtree(int a_len, vector<ll> &a) { // change if type updated
 		arr = a;
 		n = a_len;
 		tree.resize(4 * n); fill(all(tree), 0);
